@@ -14,3 +14,23 @@ Enter the # of days in the month: 30
 You earned $0.2 interest. 
 (2 points) 
 """
+import math
+import os
+
+os.system('cls')
+print("principal:")
+p = input()
+p = float(p)
+print("rate:")
+r = input()
+r = float(r)
+r = r / 100
+print("days of month:")
+d = input()
+d = float(d)
+os.system('cls')
+
+i = (p * r * d) / 365
+i = float(i)
+i = round(i,1)
+print(f"\n\n      You earned ${i} interest.")
